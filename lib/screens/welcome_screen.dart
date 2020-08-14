@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flash_chat/screens/login_screen.dart';
 import 'package:flash_chat/screens/registration_screen.dart';
-import 'package:flash_chat/shadow_button.dart';
+import 'file:///D:/Udemy/Flutter/Projects/flash-chat-flutter/lib/utilities/shadow_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String routeName = '/';

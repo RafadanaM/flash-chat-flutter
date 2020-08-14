@@ -1,7 +1,7 @@
 import 'package:flash_chat/constants.dart';
 import 'package:flash_chat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flash_chat/shadow_button.dart';
+import 'file:///D:/Udemy/Flutter/Projects/flash-chat-flutter/lib/utilities/shadow_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final _height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
@@ -33,12 +34,12 @@ class _LoginScreenState extends State<LoginScreen> {
               Hero(
                 tag: 'logo',
                 child: Container(
-                  height: 200.0,
+                  height: _height * 0.2,
                   child: Image.asset('images/logo.png'),
                 ),
               ),
               SizedBox(
-                height: 48.0,
+                height: _height * 0.05,
               ),
               TextField(
                   keyboardType: TextInputType.emailAddress,
